@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(192, 192, 192);
+        }
+        .form-content {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-heading {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .margin {
+            margin-top: 25px;
+            margin-left: 30px;
+        }
+        .form-label-1{
+            font-size: 15px;
+        }
+        .first-para {
+            font-size: 22px;
+            margin-top: 0;
+        }
+        .form-label {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .text-box {
+            height: 2.5em;
+            width: 16em;
+            border: 2px solid #24246298;
+            background-color: whitesmoke;
+            border-radius: 6px;
+        }
+        .text-box:focus {
+            border: 2px solid black;
+            outline: none;
+            box-shadow: 0px 5px 15px -3px rgb(0, 0, 0);
+        }
+        .display{
+            display: flex;
+        }
+        .box{
+            width: 9em;
+        }
+        .margin1{
+            margin-right: 30px;
+        }
+        .box1{
+            width: 21.6em;
+        }
+        .box2{
+            width: 51.4em;
+        }
+        #city{
+            margin-right: 101px;
+        }
+        .box3{
+            width: 51.4em;
+            height: 15em;
+        }
+        #comments{
+            padding: 10px;
+        }
+        .btn{
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            background-color: rgb(10, 180, 10);
+            border: transparent;
+            border-radius: .3em;
+            margin-bottom: 20px;
+        }
+        #btn-align{
+            margin-right: 383px;
+        }
+        .hr{
+            width: 702px;
+            background-color: white;
+            height: 2px;
+            outline: none;
+            border: transparent;
+        }
+    </style>
+</head>
+<body>
+    <section class="form-content">
+        <h3 class="margin form-heading">Student Registration Form</h3>
+        <p class="margin first-para">Fill out the form carefully for registration</p>
+        <form class="form-section">
+            <div class="margin">
+                <label for="fname" class="form-label">Student Name</label><br><br>
+                <input type="text" name="name" id="fname" class="text-box" required>
+                &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="mname" class="text-box">
+                &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="lname" class="text-box"><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+                    for="name" class="form-label-1">First Name</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+                    for="mname" class="form-label-1">Middle Name</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+                    for="lname" class="form-label-">Last Name</label>
+            </div>
+            <div class="margin display">
+                <div class="margin1">
+                    <label for="month" class="form-label">Birth Date</label><br><br>
+                    <select name="date" id="month" class="text-box box">
+                        <option value="none">Select Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select name="date" id="day" class="text-box box">
+                        <option value="none">Select Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select name="date" id="year" class="text-box box">
+                        <option value="none">Select Year</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                    </select><br>
+                    &nbsp;&nbsp; &nbsp; &nbsp;<label for="month" class="form-label-1">Month</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="day"
+                        class="form-label-1">Day</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label for="year"
+                        class="form-label-1">Year</label>
+                </div>
+                <div>
+                    <label for="gender" class="form-label">Gender</label><br><br>
+                    <select name="gender" id="gender" class="text-box box1">
+                        <option value="none">Please Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="margin">
+                <label for="streetaddress" class="form-label">Address</label><br><br>
+                <input type="text" name="address" id="streetaddress" class="text-box box2"><br>
+                <label for="streetaddress" class="form-label-1">Street address</label><br><br>
+                <input type="text" name="address" id="streetline2" class="text-box box2"><br>
+                <label for="streetline2" class="form-label-1">Street address line 2</label><br><br>
+                <input type="text" name="address" id="city" class="text-box box1">
+                <input type="text" name="address" id="state" class="text-box box1"><br>
+                <label for="city" class="form-label-1">City</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="state" class="form-label-1">State / Province</label><br><br>
+                <input type="text" name="zipcode" id="zipcode" class="text-box box2"><br>
+                <label for="zipcode" class="form-label-1">Postal / Zip Code</label>
+            </div>
+            <div class="margin display">
+                <div id="city">
+                    <label for="email" class="form-label">Student E-mail</label><br><br>
+                    <input type="email" name="email" id="email" placeholder="   ex: myname@example.com" class="text-box box1"><br>
+                    <label for="email" class="form-label-1">example@example.com</label>
+                </div>
+                <div>
+                    <label for="mobilenum" class="form-label">Mobile Number</label><br><br>
+                    <input type="tel" name="phone" id="mobilenum" class="text-box box1" placeholder="   (000) 000-0000">
+                </div>
+            </div>
+            <div class="margin display">
+                <div id="city">
+                    <label for="phonenum" class="form-label">Phone Number</label><br><br>
+                    <input type="phone" name="phone" id="phonenum" placeholder="   (000) 000-0000" class="text-box box1">
+                </div>
+                <div>
+                    <label for="worknum" class="form-label">Work Number</label><br><br>
+                    <input type="tel" name="phone" id="worknum" class="text-box box1" placeholder="   (000) 000-0000">
+                </div>
+            </div>
+            <div class="margin">
+                <label for="companyname" class="form-label">Company</label><br><br>
+                <input type="text" name="company" id="companyname" class="text-box box1">
+            </div>
+            <div class="margin">
+                <label for="courses" class="form-label">Courses</label><br><br>
+                <select name="courses" id="courses" class="text-box box1">
+                    <option value="none">Please Select</option>
+                    <optgroup label="Front-end courses">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>React.js</option>
+                    </optgroup>
+                    <optgroup label="Back-end courses">
+                        <option>Node.js</option>
+                        <option>Django</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="margin">
+                <label for="comments" class="form-label">Additional Comments</label><br><br>
+                <textarea name="comments" id="comments" class="text-box box3" placeholder="Type here..."></textarea>
+            </div>
+            <hr class="margin hr">
+            <div class="margin">
+                <button type="submit" class="btn form-label" id="btn-align">Submit Application</button><button type="reset" class="btn form-label">Clear Fields</button>    
+            </div>       
+        </form>
+    </section>
+</body>
+</html>
